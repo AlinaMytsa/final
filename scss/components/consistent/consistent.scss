@@ -1,0 +1,73 @@
+.consistent{
+  padding: 75px 0;
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__left-side{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    &-accent-title{
+      background: $hero-text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      &:hover{
+        color: $active-color;
+      }
+    }
+
+    &-accent-title,
+    &-title{
+      font-size: $font-xl;
+      font-weight: $font-semibold;
+      line-height: 46px;
+      text-align: right;
+      text-decoration: none;
+    }
+
+    &-title{
+      color: $text-grey;
+
+      &:hover{
+        background: $hero-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+  }
+
+  &__center-line{
+    width: 4px;
+    height: 303px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  &__right-side{
+
+    &-title,
+    &-desc{
+      max-width: 581px;
+      color: $white;
+    }
+
+    &-title{
+      font-size: $font-lg;
+      font-weight: $font-semibold;
+    }
+
+    &-desc{
+      font-size: $font-md;
+      line-height: 30px;
+    }
+  }
+}

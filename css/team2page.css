@@ -1,0 +1,222 @@
+.nav-link {
+  --bs-nav-link-color: #fff;
+  --bs-navbar-active-color: #F0145A;
+  --bs-navbar-nav-link-padding-x: 0;
+  --bs-nav-link-hover-color: #F0145A;
+  --bs-nav-link-padding-y: 0;
+}
+
+.bg-gradient {
+  --bs-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%) ;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.bg-gradient {
+  position: relative;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.bg-gradient:before, .bg-gradient:after {
+  content: "";
+  display: block;
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  height: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bg-gradient:before {
+  bottom: -10px;
+  background-color: #CACADB;
+  width: calc(100% - 20px);
+}
+.bg-gradient:after {
+  bottom: -20px;
+  background-color: #E7E7F2;
+  width: calc(100% - 40px);
+}
+
+.team-header {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 1;
+}
+.team-header__content-wrapper {
+  position: relative;
+}
+.team-header__top {
+  font-size: 16px;
+  color: #fff;
+}
+.team-header__top .container {
+  position: absolute;
+}
+.team-header__top-content {
+  position: absolute;
+  z-index: 1;
+  right: -48px;
+  top: -16px;
+}
+.team-header__top-content > div:not(:last-child) {
+  margin-right: 6px;
+}
+.team-header__top-content > div:not(:last-child):after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+.team-header__top-lang input[name=lang] {
+  display: none;
+}
+.team-header__top-lang input[name=lang]:checked + span {
+  background-color: #F0145A;
+  color: #fff;
+}
+.team-header__top-lang label span {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 7px;
+  border-radius: 8px;
+  color: #B3B3BA;
+}
+.team-header__top-adress a {
+  color: #B3B3BA;
+  text-decoration: none;
+}
+.team-header__top-phone a {
+  color: #B3B3BA;
+  font-weight: 700;
+  text-decoration: none;
+}
+.team-header .navbar-nav {
+  width: 100%;
+  gap: 15px;
+}
+.team-header .navbar-nav .nav-link {
+  font-weight: 700;
+  color: #24A3FF;
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+.team-header .navbar-nav .nav-link:hover {
+  color: #F0145A;
+}
+.team-header .navbar-nav .active {
+  color: #F0145A;
+  border-bottom: 2px solid;
+}
+
+.squad {
+  padding: 176px 0 60px 0;
+}
+.squad__title {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  max-width: 1080px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.squad .row .col-4 img {
+  height: 400px;
+  width: 400px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.squad__photo-title {
+  gap: 10px;
+}
+.squad__photo-title-text h2 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #323264;
+  margin-bottom: 5px;
+  width: 353px;
+}
+.squad__photo-title-text p {
+  width: 353px;
+  font-size: 14px;
+  color: #B3B3BA;
+}
+.squad .bi-chevron-right {
+  color: #24A3FF;
+  background-color: #F5F5FA;
+  background-size: 35px 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.squad .bi-chevron-right:hover {
+  color: #F0145A;
+}
+
+.footer {
+  background-color: #F5F5FA;
+  padding: 30px 0;
+}
+.footer__top {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.footer__top-adress {
+  font-size: 16px;
+}
+.footer__top-adress span:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #B3B3BA;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.footer__top a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.footer__top-text {
+  font-size: 16px;
+  color: #B3B3BA;
+}
+.footer__bottom > div:not(:last-child):after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #B3B3BA;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.footer__bottom-phone a {
+  color: #46466E;
+}
+.footer__bottom-phone, .footer__bottom-mail {
+  font-weight: 700;
+  font-size: 16px;
+}
+.footer__bottom-phone a, .footer__bottom-mail a {
+  text-decoration: none;
+}
+.footer__bottom-mail {
+  color: #24A3FF;
+}
+
+/*# sourceMappingURL=team2page.css.map */

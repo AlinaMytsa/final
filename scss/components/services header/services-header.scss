@@ -1,0 +1,102 @@
+.services-header {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 1;
+
+  &__content-wrapper{
+    position: relative;
+  }
+
+  &__top {
+    font-size: $font-sm;
+    color: $white;
+
+
+
+    .container{
+      position: absolute;
+    }
+
+    &-content{
+      position: absolute;
+      z-index: 1;
+      right: -48px;
+      top: -16px;
+    }
+
+    &-content > div:not(:last-child) {
+      margin-right: 6px;
+
+      &:after{
+        content: '';
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        background-color: $white;
+        border-radius: 50%;
+        margin-left: 3px;
+      }
+    }
+
+    &-lang {
+
+      input[name="lang"] {
+        display: none;
+      }
+
+      input[name="lang"]:checked + span {
+        background-color: $accent-color;
+      }
+
+      label span {
+        display: inline-block;
+        cursor: pointer;
+        font-weight: $font-semibold;
+        letter-spacing: 1px;
+        padding: 5px 7px;
+        border-radius: 8px;
+      }
+
+    }
+
+    &-adress {
+      a {
+        color: $white;
+        text-decoration: none;
+
+      }
+
+    }
+
+    &-phone{
+      a{
+        color: $white;
+        font-weight: $font-semibold;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .navbar-nav{
+    width: 100%;
+    gap: 15px;
+
+    .nav-link{
+      font-weight: $font-semibold;
+      color: $white;
+      font-size: $font-sm;
+      padding-bottom: 3px;
+
+      &:hover{
+        color: $accent-color;
+      }
+    }
+
+    .active{
+      color: $accent-color;
+      border-bottom: 2px solid;
+    }
+  }
+}

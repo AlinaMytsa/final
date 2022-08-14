@@ -1,0 +1,125 @@
+.team-oksana {
+  padding: 176px 0 60px 0;
+
+  &__container {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  &__hr {
+    height: 4px;
+    background-color: $separator-grey;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__right-side {
+
+    &-title {
+
+      h1 {
+        font-weight: $font-semibold;
+        font-size: $font-xl;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        margin-bottom: 15px;
+      }
+
+      &-contacts {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        margin-bottom: 30px;
+
+        p {
+          font-size: $font-small;
+          color: $text-grey;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          &:after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $separator-grey;
+          }
+        }
+
+        &-mail,
+        &-link {
+          font-size: $font-sm;
+          color: $regular-color;
+          text-decoration: none;
+        }
+
+        &-mail {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          &:after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $separator-grey;
+          }
+        }
+      }
+    }
+
+    &-text {
+
+      &-p1,
+      &-p2 {
+        font-size: $font-sm;
+        line-height: 26px;
+      }
+
+      &-p2 {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-education {
+      margin-bottom: 30px;
+
+      &-title {
+        font-weight: $font-semibold;
+        font-size: $font-small;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main-color;
+        margin-bottom: 15px;
+      }
+
+      &-desc{
+        font-size: $font-sm;
+        line-height: 26px;
+      }
+    }
+
+    &-experience{
+      h2{
+        font-weight: $font-semibold;
+        font-size: $font-small;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main-color;
+        margin-bottom: 15px;
+      }
+
+      &-desc{
+        font-size: $font-sm;
+        line-height: 26px;
+      }
+    }
+  }
+}

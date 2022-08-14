@@ -1,0 +1,27 @@
+.footer{
+  @media (max-width: 375px) {
+    &__top{
+      flex-direction: column;
+      text-align: center;
+
+      &-adress{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        span:after{
+          display: none;
+        }
+      }
+    }
+
+    &__bottom{
+      flex-direction: column;
+      gap: 10px;
+
+      & > div:not(:last-child):after{
+        display: none;
+      }
+    }
+  }
+}

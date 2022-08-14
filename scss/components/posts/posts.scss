@@ -1,0 +1,123 @@
+.posts{
+  padding: 176px 0 30px 0;
+  background-color: $bg-grey;
+
+  .btn-group-horizontal{
+    margin-bottom: 30px;
+    border: 1px solid $separator-grey;
+    border-radius: $default-border-radius;
+    background-color: $separator-grey;
+  }
+
+    .btn-check{
+      outline: none;
+    }
+
+  .active{
+    background-color: $white;
+  }
+
+  &__wrapper{
+    padding: 30px 0 30px 0;
+    border-bottom: 2px solid $separator-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+&__row{
+  gap: 17px;
+  margin-bottom: 30px;
+
+
+  &-card{
+    background-color: $white;
+    max-width: 420px;
+    height: 450px;
+    border-radius: 8px;
+
+
+    &-top{
+      background-position: center center;
+
+      &-first-card,
+      &-second-card,
+      &-third-card,
+      &-fourth-card,
+      &-fifth-card{
+        border-radius: 8px 8px 0 0;
+        width: 420px;
+        height: 200px;
+      }
+
+      &-first-card{
+        background-image: url("../assets/images/post1.png");
+      }
+
+      &-second-card{
+        background-image: url("../assets/images/post2.png");
+      }
+
+      &-third-card{
+        background-image: url("../assets/images/post3.png");
+      }
+
+      &-fourth-card{
+        background-image: url("../assets/images/post4.png");
+      }
+
+      &-fifth-card{
+        background-image: url("../assets/images/post5.png");
+      }
+    }
+
+    &-bottom{
+      padding: 30px;
+
+      h2{
+        font-weight: $font-semibold;
+        font-size: $font-sm;
+        line-height: 20px;
+        color: $regular-color;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        &:hover{
+          color: $accent-color;
+        }
+      }
+
+      &-date{
+        font-weight: $font-semibold;
+        font-size: $font-xs;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $text-grey;
+        margin-bottom: 15px;
+      }
+
+      &-line{
+        width: 360px;
+        height: 4px;
+        background: $separator-grey;
+        margin-bottom: 15px;
+      }
+
+      &-description{
+        font-size: $font-small;
+        line-height: 22px;
+      }
+    }
+  }
+}
+  &__publications{
+    background: $regular-color;
+    box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    padding: 18px 30px;
+    color: $white;
+    font-size: $font-sm;
+    font-weight: $font-semibold;
+    text-decoration: none;
+  }
+}

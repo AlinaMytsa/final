@@ -1,0 +1,83 @@
+.publications{
+  background-color: $bg-grey;
+  padding: 30px 50px;
+  border-bottom: solid $separator-grey 2px;
+
+  &__titles{
+    margin-bottom: 30px;
+
+    &-link{
+      color: $regular-color;
+      a{
+        text-decoration: none;
+        color: $regular-color;
+        font-size: $font-small;
+        font-weight: $font-semibold;
+      }
+    }
+  }
+
+  &__hero-text{
+    background: $hero-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: $font-xl;
+    font-weight: $font-semibold;
+  }
+
+  &__wrapper{
+    gap: 30px;
+    margin-bottom: 30px;
+
+
+    &-mini-wrapper{
+      gap: 30px;
+    }
+
+    &-card{
+      display: flex;
+      flex-direction: column;
+      width: 420px;
+      background-color: $white;
+      padding: 0 30px 70px 30px;
+      border-radius: 8px;
+
+      img{
+        position: initial;
+        margin-bottom: 30px;
+        max-width: 420px;
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+    &-line{
+      width: 360px;
+      height: 4px;
+      background-color: $separator-grey;
+      margin-bottom: 15px;
+    }
+
+    &-title{
+      font-weight: $font-semibold;
+      font-size: $font-sm;
+      color: $regular-color;
+      margin-bottom: 15px;
+      max-width: 360px;
+    }
+
+    data{
+      font-weight: $font-semibold;
+      font-size: $font-xs;
+      color: $text-grey;
+      margin-bottom: 15px;
+    }
+
+    &-description{
+      font-size: $font-small;
+      line-height: 22px;
+      max-width: 360px;
+    }
+  }
+}

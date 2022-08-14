@@ -1,0 +1,122 @@
+
+.form{
+  background: #323264;
+  opacity: 0.7;
+  padding: 245px 395px 235px 395px;
+
+  form{
+    width: 100%;
+  }
+
+  &__wrapper{
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5FA;
+    box-shadow: 0 15px 80px rgba(40, 40, 86, 0.5);
+    border-radius: 12px;
+    padding: 30px;
+
+    &-title{
+      gap: 48px;
+      background: $red-text-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      .bi-x{
+        width: 18px;
+        height: 18px;
+        background: $red-text-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      h1{
+        font-weight: $font-semibold;
+        font-size: $font-xl;
+      }
+    }
+  }
+
+  &__name,
+  &__textarea,
+  &__number{
+    background-color: $white;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid $white;
+    border-radius: 8px;
+  }
+
+  &__name{
+    input{
+      padding: 15px 0 15px 15px;
+      border: 1px solid $white;
+      border-radius: 8px;
+      outline: none;
+    }
+  }
+
+  &__textarea{
+    margin-bottom: 30px;
+
+    textarea{
+      padding: 15px 0 90px 15px;
+      resize: none;
+      border: 1px solid $white;
+      border-radius: 8px;
+      outline: none;
+    }
+
+  }
+
+  &__subtitle{
+    align-self: flex-start;
+    font-weight: $font-semibold;
+    font-size: $font-small;
+    letter-spacing: 1px;
+    color: $text-grey;
+    margin-bottom: 15px;
+  }
+
+  &__number{
+
+    input{
+      border: 1px solid $white;
+      border-radius: 8px;
+      padding: 15px 0 15px 15px;
+      outline: none;
+    }
+  }
+
+  &__email{
+    background-color: $white;
+    width: 100%;
+    border: 1px solid $white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    input{
+      border: 1px solid $white;
+      border-radius: 8px;
+      padding: 15px 0 15px 15px;
+      outline: none;
+    }
+  }
+
+  button{
+    padding: 18px 0;
+    width: 100%;
+    background: $regular-color;
+    box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+    border-radius: $default-border-radius;
+    border: none;
+    color: $white;
+    font-weight: $font-semibold;
+    font-size: $font-sm;
+  }
+}
+

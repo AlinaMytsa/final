@@ -1,0 +1,85 @@
+.consistent {
+
+  @media (max-width: 1024px) {
+    padding: 60px;
+
+    &__left-side {
+      width: 60%;
+    }
+
+    &__right-side {
+
+      &-title,
+      &-desc {
+        width: 405px;
+
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__center-line {
+      height: 4px;
+      width: 648px;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    &__left-side {
+      flex-direction: row;
+      gap: 30px;
+      max-width: 648px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: 46px;
+    }
+
+    &__right-side {
+      &-title,
+      &-desc {
+        width: 648px;
+      }
+    }
+  }
+
+
+  @media (max-width: 375px) {
+    padding: 30px;
+
+    &__wrapper{
+      gap: 30px;
+    }
+
+    &__left-side{
+      &-accent-title,
+      &-title{
+        font-size: $font-lg;
+    }
+    }
+
+    &__right-side {
+
+      &-title,
+      &-desc {
+        width: 315px;
+      }
+
+      &-title{
+        font-size: $font-medium2;
+      }
+
+      &-desc{
+        font-size: $font-md;
+      }
+    }
+
+    &__center-line {
+      width: 315px;
+    }
+  }
+}

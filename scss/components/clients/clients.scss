@@ -1,0 +1,13 @@
+.clients{
+
+  &__empty-row{
+    display: none;
+  }
+
+  &__title{
+    font-weight: $font-semibold;
+    font-size: $font-small;
+    color: $main-color;
+    margin-bottom: 30px;
+  }
+}

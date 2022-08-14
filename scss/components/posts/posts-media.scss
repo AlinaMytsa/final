@@ -1,0 +1,38 @@
+.posts{
+
+  @media (max-width: 1024px) {
+    &__row{
+
+      &-card{
+        width: 281px;
+        height: 556px;
+
+        &-top{
+          width: 281px;
+          height: 200px;
+        }
+
+        &-bottom{
+
+          &-line{
+            width: 221px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__row{
+      &-card{
+        width: 309px;
+        height: 514px;
+
+        &-top{
+          width: 309px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}

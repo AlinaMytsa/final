@@ -1,0 +1,76 @@
+.publications {
+  @media (max-width: 1024px) {
+    &__wrapper {
+      align-items: flex-start;
+      &-card {
+        width: 280px;
+        height: 556px;
+      }
+
+      &-line{
+        width: 233px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__wrapper{
+      flex-wrap: wrap;
+
+      &-card{
+        width: 309px;
+        height: 514px;
+      }
+
+      &-card-third{
+        width: 648px;
+        align-items: center;
+
+        &-line{
+          width: 588px;
+        }
+
+        img{
+          width: 648px;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+
+      &-card {
+        width: 315px;
+        align-items: center;
+
+        img {
+          width: 315px;
+        }
+      }
+
+      &-mini-wrapper{
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-card-third{
+        width: 315px;
+        align-items: center;
+
+        img{
+          max-width: 315px;
+          height: 200px;
+        }
+      }
+
+      &-line {
+        width: 255px;
+      }
+    }
+  }
+}

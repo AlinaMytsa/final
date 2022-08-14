@@ -1,0 +1,33 @@
+.banner{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/images/banner.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+
+  h1{
+    color: $white;
+    font-size: $font-xl;
+    font-weight: $font-semibold;
+  }
+
+  &__scroll{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    stroke: $white;
+
+    circle{
+      color: $white;
+    }
+
+    &:hover{
+      stroke: $accent-color;
+    }
+  }
+}

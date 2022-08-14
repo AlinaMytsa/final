@@ -1,0 +1,25 @@
+.services{
+
+  @media (max-width: 1024px) {
+
+      &__item{
+        max-width: 260px;
+      }
+  }
+
+  @media (max-width: 768px) {
+    &__item{
+      width: 290px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__hero-title{
+      font-size: 30px;
+    }
+
+    &__item{
+      min-width: 315px;
+    }
+  }
+}

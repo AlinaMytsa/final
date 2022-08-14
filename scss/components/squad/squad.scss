@@ -1,0 +1,58 @@
+.squad{
+  padding: 176px 0 60px 0;
+
+  &__title{
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 1080px;
+    font-weight: $font-semibold;
+    font-size: $font-xl;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .row .col-4{
+    img{
+      height: 400px;
+      width: 400px;
+      border-radius: $default-border-radius;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__photo-title{
+    gap: 10px;
+
+
+    &-text{
+      h2{
+        font-weight: $font-semibold;
+        font-size: $font-sm;
+        color: $main-color;
+        margin-bottom: 5px;
+        width: 353px;
+      }
+      p{
+        width: 353px;
+        font-size: $font-small;
+        color: $text-grey;
+      }
+    }
+  }
+
+  .bi-chevron-right{
+    color: $regular-color;
+    background-color: $bg-grey;
+    background-size: 35px 35px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover{
+      color: $accent-color;
+    }
+  }
+}

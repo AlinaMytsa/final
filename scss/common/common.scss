@@ -1,0 +1,51 @@
+body{
+  font-family: $main-font;
+  font-weight: $font-normal;
+  font-size: $font-md;
+}
+
+.bg-gradient {
+  position: relative;
+  border-bottom-left-radius: $default-border-radius;
+  border-bottom-right-radius: $default-border-radius;
+
+
+  &:before, &:after{
+    content: '';
+    display: block;
+    border-radius: 0 0 $default-border-radius $default-border-radius;
+    position: absolute;
+    height: $gradient-shadow-height;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:before {
+    bottom: -10px;
+    background-color: #CACADB;
+    width: calc(100% - 20px) ;
+  }
+
+  &:after {
+    bottom: -20px;
+    background-color: #E7E7F2;
+    width: calc(100% - 40px);
+  }
+
+
+}
+
+
+
+
+
+
+
+
+//media
+//@media (min-width: 1400px) {
+//  .container{
+//    max-width: 1600px;
+//  }
+//}
+

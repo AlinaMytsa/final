@@ -1,0 +1,32 @@
+.team{
+
+  @media (max-width: 1024px) {
+
+    &__right-side{
+      max-width: 444px;
+    }
+
+    &__left-side{
+      height: 528px;
+      width: 400px;
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__wrapper{
+      flex-direction: column;
+    }
+
+    &__left-side{
+      width: 100%;
+      border-radius: $default-border-radius $default-border-radius 0 0;
+    }
+  }
+
+  @media (max-width: 375px) {
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
