@@ -64,6 +64,14 @@
         font-size: $font-sm;
         font-weight: $font-normal;
         text-decoration: none;
+
+        &:hover {
+          background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
       }
     }
 
@@ -71,12 +79,31 @@
       font-weight: $font-semibold;
     }
 
+
+    &-social a:hover {
+      color: #006CCF;
+    }
+
+    &-social a svg path:hover {
+      fill: #006CCF;
+    }
+
   }
 
   .navbar {
 
     &-brand {
-      margin-top: -20px;
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        transition: .9s;
+        box-shadow: 35px -2px 50px rgb(217 176 255),
+        0 0 3em 1em rgb(191 123 255 / 78%),
+        inset 0 0 0.75em 0.25em rgb(217 176 255);
+      }
     }
 
     &-nav {
@@ -91,6 +118,12 @@
     .nav-link {
       font-weight: $font-semibold;
       padding-bottom: 3px;
+
+      &:hover{
+        transform: scale(1.05);
+        transition: .4s;
+
+      }
 
       &.active {
         border-bottom: 2px solid;

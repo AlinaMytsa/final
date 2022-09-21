@@ -13,6 +13,11 @@
     color: $white;
     font-size: $font-xl;
     font-weight: $font-semibold;
+
+    &:hover{
+      filter: drop-shadow(0 0 23px $white)
+
+    }
   }
 
   &__scroll{
@@ -21,6 +26,10 @@
     left: 50%;
     transform: translateX(-50%);
     stroke: $white;
+
+    &:hover{
+      filter: drop-shadow(0 0 25px $white);
+    }
 
     circle{
       color: $white;
